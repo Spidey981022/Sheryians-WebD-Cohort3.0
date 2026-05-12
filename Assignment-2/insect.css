@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#left-nav{
+    display: flex;
+    gap: 1cm;
+    height: 50px;
+    align-items: center;
+    margin: 35px;
+}
+#left-nav p{
+    font-weight: bold;
+    font-size: 25pt;
+}
+input{
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+    border: none;
+    background-color: #EFEFEF;
+    text-indent: 1cm;
+}
+#search-box i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left-div{
+    height: 100vh;
+    width: 50%;
+}
+
+
+/*RIGHT NAV-DIV STARTS HERE*/
+#menu{
+    width: 100vw;
+}
+#menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    color: white;
+}
+#right-nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin: 35px;
+}
+#right-div{
+    height: 100vh;
+    width: 50%;
+    background-color: #BC3C30;
+}
+#classification-box{
+    display: flex;
+    gap: 2cm;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 3cm;
+    top: 5cm;
+
+}
+#classification-box span{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 38pt;
+}
+#classification-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+li::marker {
+    color: #B93731;
+    font-size: 1.4rem;
+}
+/*RIGHT NAV-DIV ENDS HERE*/
+
+#center-div img{
+    position: absolute;
+    height: auto;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(5px 5px 5px #444);
+}
+
+#right-content{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 20vw;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+}
+.img-box{
+    display: flex;
+    margin: 20px 0;
+}
+.info .insectname{
+    font-size: 30pt;
+}
+.img-box{
+    /*border: 1px solid white;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3cm 0;
+}
+.img-box .ri-bug-2-line{
+    font-size: 90pt;
+    color: white;
+}
+.img-box .info{
+    color: white;
+    font-size: 10pt;
+}
+button{
+    height: 50px;
+    width: 180px;
+    background-color: #DABC92;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.ri-toggle-line{
+    color: white;
+    font-size: 25pt;
+}
+.footertext{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
