@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: #D5D6FA;
+}
+
+
+/*MAIN BOX STYLING STARTS HERE*/
+main{
+    height: 95vh;
+    width: 95vw;
+    background-color: #F6F8FC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px;
+}
+/*MAIN BOX STYLING ENDS HERE*/
+
+
+/*NAVBAR STYLING STARTS HERE*/
+nav.navbar1{
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu, .theme{
+    position: relative;
+    top: 15px;
+    color: #5676A8;
+    background-color: #F8F9FD;
+    padding: 10px;
+    height: 38px;
+    border-radius: 10px;
+    border: transparent;
+    font: bold 14px Verdana;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+img.pok-logo{
+    height: auto;
+    width: 80%;
+}
+
+nav.navbar2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.search-pokemon{
+    display: flex;
+}
+.ri-search-line{
+    padding: 10px;
+    height: 38px;
+    border: transparent;
+    font: bold 14px Verdana;
+    position: absolute;
+    z-index: 1;
+}
+.pok-search{
+    height: 38px;
+    width: 8cm;
+    border-radius: 100px;
+    border: transparent;
+    text-indent: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.filter{
+    display: flex;
+    gap: 10px;
+}
+.filter-type{
+    display: flex;
+}
+.filter-box{
+    height: 38px;
+    width: 5cm;
+    border-radius: 100px;
+    border: transparent;
+    text-indent: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.filter-box::placeholder {
+    font-weight: 600;
+    color: black;
+    opacity: 1; /* Ensures the bold text isn't faded in Firefox */
+}
+.ri-arrow-drop-down-line{
+    padding: 10px;
+    height: 38px;
+    border: transparent;
+    font: bold 14px Verdana;
+}
+.ri-sort-desc{
+    padding: 10px;
+    height: 38px;
+    border: transparent;
+    border-radius: 100px;
+    font: bold 14px Verdana;
+    background-color: #F8F9FD;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/*NAVBAR STYLING ENDS HERE*/
+
+/*CARD STYLING STARTS HERE*/
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 38vh;
+    margin-top: 20px;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 5cm;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:transparent;
+    border-bottom: 4px solid #78BF70;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 5cm;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:transparent;
+    border-bottom: 4px solid #718599;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 5cm;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:transparent;
+    border-bottom: 4px solid #F47A64;
+}
+.card4{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 5cm;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:transparent;
+    border-bottom: 4px solid #7595F6;
+}
+
+.pok-id{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 10%;
+    margin:15px;
+    text-align: center;
+}
+.pokid{
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+i.ri-poker-hearts-line{
+    width: 25px;
+    border-radius: 100px;
+    border: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pok-image img:nth-child(1){
+    height: auto;
+    width: 18px;
+    margin-left: 10px;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    bottom: 12px;
+    left: 4px;
+}
+.type-pok.grass{
+    background-color: #E7F2E9;
+}
+.type-pok.steel{
+    background-color: #ECF1F6;
+}
+.type-pok.fire{
+    background-color: #ffdac8;
+}
+.type-pok.water{
+    background-color: #d9e6fd;
+}
+
+.pok-image img:nth-child(2){
+    height: auto;
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #7595F6);
+    position: relative;
+    bottom: 40px;
+}
+.pok-title {
+    position: absolute;
+    bottom: 230px;
+    margin-left: 10px;
+}
+/*CARD STYLING ENDS HERE*/
+
+
+/*INFO BOX STYLING STARTS HERE*/
+.info{
+    height: 15vh;
+    width: 70%;
+    position: relative;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.explore, .filter-info, .stats, .collection{
+    height: 90%;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.info p{
+    font-size: 14px;
+}
+img.icon2{
+   height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+}
+.icon2.A{
+    background-color: #EAEEFE;
+}
+.icon2.B{
+    background-color: #E7F2E9;
+}
+.icon2.C{
+    background-color: #F7F2E8;
+}
+.icon2.D{
+    background-color: #EBE2FB;
+}
+/*INFO BOX STYLING ENDS HERE*/
+
+
+
+/*FOOTER STYLING STARTS HERE*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin-top: 15px;
+    gap: 5px;
+}
+p.footer-text{
+    font-size: 10px;
+    opacity: 0.5;
+}
+.pok-img{
+    height: 3vh;
+    opacity: 0.5;
+}
+/*FOOTER STYLING ENDS HERE*/
