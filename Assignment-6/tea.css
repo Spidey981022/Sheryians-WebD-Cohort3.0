@@ -1,0 +1,1827 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 98%;
+    height: 8vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+nav .ph-menu {
+    display: none;
+}
+nav .nav1 ul {
+    font-family: "Instrument Serif";
+    font-weight: 300;
+    font-size: 24px;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+nav .nav2 ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-family: roboto mono;
+    font-weight: 500;
+    font-size: 12px;
+}
+nav .ph-bag {
+    display: none;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=3200");
+}
+section#update{
+    background: #2A2857;
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-family: roboto mono;
+    font-weight: 500;
+    text-align: center;
+    font-size: 12px;
+}
+
+section#content{
+    bottom: 40px;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 45%;
+    width: 50%;
+    margin: 0 0 0 3rem;
+}
+#content h1{
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
+    font-size: 5.25vw;
+    line-height: 5.25vw;
+    color: whitesmoke;
+}
+#content p.refrest{
+    padding-top: 20px;
+    font-family: "Figtree";
+    font-weight: 400;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+#content button#shopnow{
+    font-family: "Figtree";
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    background-color: #2A2857;
+    height: 52px;
+    width: 208px;
+}
+
+section#section-2{
+    width: 100%;
+}
+
+section .quote{
+    margin: 5% auto;
+    text-align: center;
+    width: 50vw;
+    height: 30%;
+}
+.quote h1{
+    font-family: "Instrument Serif";
+    font-weight: 300;
+    font-size: 60px;
+}
+.bestseller{
+    background-color: #DAAEEA;
+    height: 9%;
+    width: 17%;
+    border-radius: 10px;
+    border: 1px solid black;
+    justify-self: center;
+    transform: rotate(-3deg);
+    font-family: "bebas neue";
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carasoul{
+    margin: 2cm auto;
+    width: 95%;
+    height: 600px;
+    overflow-x: hidden;
+    .carasoul-item{
+        display: grid;
+        grid-template-columns: repeat(9, 300px);
+        grid-template-rows: repeat(1, 100%);
+        gap: 1rem;
+        overflow-x: auto;
+    }
+    .item{
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 350px;
+        display: grid;
+        place-items: center;
+        img{
+            width: 90%;
+        }
+    }
+    .produ-desc{
+        p.product{
+            margin: 20px 0;
+            font-family: "instrument Serif";
+            font-weight: 400;
+            font-size: 24px;
+        }
+        p.price{
+            margin: 20px 0;
+            font-family: "figtree";
+            font-weight: 500;
+            font-size: 14px;
+        }
+        p.desc {
+            margin: 20px 0;
+            font-family: "figtree";
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+#section-2 button{
+    font-family: "figtree";
+    background-color: #2A2857;
+    color: white;
+    height: 50px;
+    width: 208px;
+    border-radius: 10px;
+    font-size: 15pt;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#section-3{
+    margin-top: 4cm;
+    width: 100%;
+    border: 1px solid black;
+}
+.discover{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 500px;
+    .orange-box{
+        margin: 4cm 0 0 0;
+        background-color: #FF7F31;
+        height: 15%;
+        width: 20%;
+        /*letter-spacing: 3px;*/
+        border-radius: 10px;
+        border: 1px solid black;
+        justify-self: center;
+        transform: rotate(-3deg);
+        font-family: "bebas neue";
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content h2{
+        margin: 20px 0;
+        font-family: "Instrument Serif";
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .search-box input{
+        margin: 20px 0;
+        width: 40%;
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: instrument Serif;
+        font-size: 38px;
+        text-indent: 0.5cm;
+    }
+}
+.vibe-box{
+    margin: 3.5cm auto;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    p{
+        font-family: "figtree";
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 1cm;
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        h3{
+            font-family: "Instrument Serif";
+            font-weight: 400;
+            font-size: 32px;
+            flex-shrink: 0;
+            height: 50px;
+            padding: 5px;
+          background-color: #DAEAFF;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+    }
+}
+#section-4{
+    .image-box{
+        position: relative;
+        width: 100%;
+        height: 250vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .kettle{
+            position: absolute;
+            width: 10%;
+            top: -30px;
+            right: 150px;
+        }
+        .founderBox{
+            position: absolute;
+            top:35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            height: 50%;
+            h3{
+                background-color: #A2C9FC;
+                height: 6%;
+                width: 20%;
+                border-radius: 10px;
+                border: 1px solid black;
+                transform: rotate(-3deg);
+                font-family: "bebas neue";
+                font-size: 53px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                font-family: "bebas neue";
+                font-weight: 600;
+                font-size: 180px;
+                line-height: 144px;
+                color: whitesmoke;
+                text-align: center;
+            }
+            p{
+                font-family: "Instrument Serif";
+                font-weight: 300;
+                font-size: 60px;
+                line-height: 69px;
+                color: whitesmoke;
+                text-align: center;
+            }
+        }
+        .svg-box{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 40%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .svg-images{
+                width: 100%;
+                height: 33%;
+                display: flex;
+                .svg-img{
+                    text-align: center;
+                    img{
+                        width: 50%;
+                    }
+                    p{
+                        width: 90%;
+                        font-family: "Roboto Mono";
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: whitesmoke;
+                    }
+                }
+            }
+            button{
+                height: 60px;
+                width: 200px;
+                border: 1px solid black;
+                border-radius: 50px;
+                font-size: 18px;
+                font-family: figtree;
+                font-weight: 400;
+            }
+        }
+    }
+}
+#section-5{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    .review-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        height: 95%;
+        .review-tag{
+            margin: 7% auto;
+            width: 60%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            h3{
+                background-color: #73BC25;
+                height: 25%;
+                width: 20%;
+                border-radius: 10px;
+                transform: rotate(-3deg);
+                font-family: "bebas neue";
+                font-size: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+            }
+            p{
+                font-family: "Instrument Serif";
+                font-weight: 300;
+                font-size: 60px;
+                line-height: 63px;
+            }
+        }
+        .review-cards{
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1, 100%);
+            place-items: center;
+            .card{
+                width: 95%;
+                height: 95%;
+                border: 1px solid black;
+                border-radius: 10px;
+                position: relative;
+                .card-content{
+                    position: absolute;
+                    width: 80%;
+                    max-height: 60%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    .reviews{
+                        font-family: "instrument Serif";
+                        font-weight: 300;
+                        line-height: 1.3;
+                        text-align: center;
+                    }
+                    .author{
+                        margin-top: 5px;
+                        opacity: 0.7;
+                    }
+                }
+                .prod-bought{
+                    justify-self: center;
+                    width: 95%;
+                    height: 17%;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    position: absolute;
+                    bottom: 2%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .prod-image{
+                        width: 25%;
+                        border-right: 1px solid;
+                    }
+                    .prod-name{
+                        width: 60%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        font-family: "Roboto Mono";
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 14px;
+                        button{
+                            width: 40%;
+                            height: 40px;
+                            border-radius: 15px;
+                            font-family: "figtree";
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+            .card-1{
+                background-color: #F5AF8A;
+                text-align: center;
+                .reviews{
+                    font-size: 2vw;
+                }
+                .prod-bought{
+                    background-color: #EA6D44;
+                }
+            }
+            .card-2{
+                background-color: #ABDF74;
+                text-align: center;
+                .reviews{
+                    font-size: 24px;
+                }
+                .prod-bought{
+                    background-color: #73BC25;
+                }
+            }
+            .card-3{
+                background-color: #FFD265;
+                text-align: center;
+                .reviews{
+                    font-size: 24px;
+                }
+                .prod-bought{
+                    background-color: #FFB500;
+                }
+            }
+            .card-4{
+                background-color: #ADE674;
+                text-align: center;
+                .reviews{
+                    font-size: 2vw;
+                }
+                .prod-bought{
+                    background-color: #8BC045;
+                }
+            }
+            .card-5{
+                background-color: #D9C2E1;
+                text-align: center;
+                .reviews{
+                    font-size: 2vw;
+                }
+                .prod-bought{
+                    background-color: #C790DB;
+                }
+            }
+        }
+    }
+}
+#section-6{
+    margin-top: 13%;
+    width: 100%;
+    .matcha-section{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        .matcha-image{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .matcha-content{
+            width: 50%;
+            background-color: #2A2857;
+            position: relative;
+            .center-div{
+                width: 80%;
+                height: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h1{
+                    font-family: "instrument Serif";
+                    font-weight: 300;
+                    font-size: 84px;
+                    line-height: 85px;
+                    color: whitesmoke;
+                }
+                p{
+                    font-family: "figtree";
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: whitesmoke;
+                }
+                button{
+                    width: 30%;
+                    height: 15%;
+                    border-radius: 25px;
+                    background-color: whitesmoke;
+                    font-size: 18px;
+                    font-family: "figtree";
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+#section-7{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .background-img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            transform: scale(1.5);
+            object-fit: cover;
+        }
+    }
+    .side-div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10%, 5%);
+        width: 27%;
+        height: 90vh;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: #F26412;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 35%;
+        padding: 30px 24px;
+        h2{
+            font-family: "Instrument Serif";
+            font-weight: 300;
+            font-size: 60px;
+            line-height: 61px;
+            color: whitesmoke;
+        }
+        .discover{
+            height: 25%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                font-family: figtree;
+                font-weight: 400;
+                font-size: 22px;
+                color: whitesmoke;
+            }
+            button{
+                width: 60%;
+                height: 30%;
+                border-radius: 25px;
+                background-color: whitesmoke;
+                font-size: 18px;
+                font-family: "figtree";
+                font-weight: 400;
+            }
+        }
+    }
+}
+#section-8{
+    background-color: #C0DBFF;
+    padding: 1px;
+    height: 210%;
+    border: 1px solid black;
+    position: relative;
+    .steep-box{
+        margin: 5% auto;
+        width: 70%;
+        height: 20%;
+        h3{
+            font-family: "bebas neue";
+            font-weight: 500;
+            font-size: 40px;
+        }
+        p{
+            font-family: instrument Serif;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 37px;
+        }
+        .search-social{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            .search,.social{
+                width: 50%;
+                height: 45px;
+                display: flex;
+                gap: 2%;
+                input{
+                    width: 60%;
+                    height: 100%;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    text-indent: 5%;
+                    font-family: Figtree;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                button{
+                    width: 35%;
+                    height: 100%;
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    background-color: #2A2857;
+                    font-family: figtree;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: whitesmoke;
+                }
+            }
+            .social{
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 5%;
+                gap: 60px;
+                i{
+                    font-size: 200%;
+                    border: 1px solid black;
+                    border-radius: 50px;
+
+                }
+            }
+        }
+    }
+    .blue-box{
+        margin: -5% auto;
+        width: 90%;
+        height: 35%;
+        border: 1px solid black;
+        background-color: #2A2857;
+        border-radius: 15px;
+        position: relative;
+        .blue-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 85%;
+            /*border: 1px solid white;*/
+        }
+        .desktop{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 200px);
+            justify-items: center;
+            gap: 3%;
+            h4{
+                font-family: instrument Serif;
+                font-weight: 500;
+                font-size: 24px;
+                color: whitesmoke;
+                margin-bottom: 9%;
+            }
+            li{
+                font-family: figtree;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: whitesmoke;
+                opacity: 0.7;
+                list-style: none;
+            }
+            li:hover{
+                opacity: 1;
+            }
+        }
+        .phone{
+            display: none;
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: 35%;
+        overflow: hidden;
+        .logo img{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20%;
+        }
+        .mountain-img img{
+            position: absolute;
+            bottom: 4cm;
+            width: 100%;
+            transform: scale(3);
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 1245px) {
+    main {
+        position: relative;
+        width: 100%;
+        height: 90%;
+        /*background-size: 150%;*/
+    }
+
+    nav .ph-menu {
+        display: flex;
+        font-size: 35px;
+    }
+
+    nav .ph-bag {
+        display: flex;
+        font-size: 35px;
+    }
+
+    nav .nav1 {
+        display: none;
+    }
+
+    nav .nav2 {
+        display: none;
+    }
+
+    nav img {
+        width: 100%;
+    }
+
+    section#content {
+        height: 30%;
+        width: 90%;
+    }
+
+    #content h1 {
+        margin: 0 auto;
+        font-family: "Instrument Serif", serif;
+        font-weight: 300;
+        font-size: 6vw;
+
+        br {
+            display: none;
+        }
+    }
+
+    #content p.refrest {
+        margin: 10px auto;
+        padding-top: 20px;
+        font-family: "Figtree";
+        font-weight: 400;
+        font-size: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    #content button#shopnow {
+        position: absolute;
+        bottom: 0;
+        font-family: "Figtree";
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        border-radius: 50px;
+        background-color: #2A2857;
+        height: 52px;
+        width: 100%
+    }
+
+    .quote h1 {
+        font-family: "Instrument Serif";
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .bestseller {
+        background-color: #DAAEEA;
+        height: 60px;
+        width: 180px;
+        border-radius: 10px;
+        border: 1px solid black;
+        transform: rotate(-3deg);
+        font-family: "bebas neue";
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .discover {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 380px;
+
+        .orange-box {
+            margin: 1cm 0 0 0;
+            background-color: #FF7F31;
+            height: 15%;
+            width: 20%;
+            /*letter-spacing: 3px;*/
+            border-radius: 10px;
+            border: 1px solid black;
+            justify-self: center;
+            transform: rotate(-3deg);
+            font-family: "bebas neue";
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content h2 {
+            margin: 20px 0;
+            font-family: "Instrument Serif";
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 55px;
+        }
+
+        .search-box input {
+            margin: 20px 0;
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+            font-family: instrument Serif;
+            font-size: 38px;
+            text-indent: 0.5cm;
+        }
+    }
+
+    .vibe-box {
+        margin: 1cm auto;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    #section-4 {
+        .image-box {
+            .founderBox {
+                h3 {
+                    background-color: #A2C9FC;
+                    height: 6%;
+                    width: 20%;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    transform: rotate(-3deg);
+                    font-family: "bebas neue";
+                    font-size: 4vmin;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h1{
+                    font-family: "bebas neue";
+                    font-weight: 600;
+                    font-size: 100px;
+                    line-height: 144px;
+                    color: whitesmoke;
+                    text-align: center;
+                    br{
+                        display: none;
+                    }
+                }
+                p{
+                    font-family: "Instrument Serif";
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 39px;
+                    color: whitesmoke;
+                    text-align: center;
+                }
+            }
+            .svg-box{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 80%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .svg-images{
+                    width: 100%;
+                    height: 33%;
+                    display: flex;
+                    justify-content: center;
+                    .svg-img{
+                        text-align: center;
+                        img{
+                            width: 50%;
+                        }
+                        p{
+                            width: 90%;
+                            font-family: "Roboto Mono";
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+                button{
+                    height: 60px;
+                    width: 80%;
+                    border: 1px solid black;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    font-family: figtree;
+                    font-weight: 400;
+                }
+            }
+        }
+        }
+    #section-5{
+        height: 120vh;
+        width: 100%;
+        position: relative;
+        .review-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 95%;
+            .review-tag{
+                width: 90%;
+                height: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                h3{
+                    background-color: #73BC25;
+                    height: 80%;
+                    width: 20%;
+                    border-radius: 10px;
+                    transform: rotate(-3deg);
+                    font-family: "bebas neue";
+                    font-size: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p{
+                    display: none;
+                }
+            }
+            .review-cards{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .card{
+                    width: 19%;
+                    height: 95%;
+                    border-radius: 10px;
+                    position: relative;
+                    .card-content{
+                        position: absolute;
+                        width: 80%;
+                        max-height: 60%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -60%);
+                        .reviews{
+                            font-family: "instrument Serif";
+                            font-weight: 300;
+                            line-height: 1.3;
+                            text-align: center;
+                        }
+                        .author{
+                            margin-top: 5px;
+                            opacity: 0.7;
+                        }
+                    }
+                    .prod-bought{
+                        justify-self: center;
+                        width: 95%;
+                        height: 17%;
+                        border-radius: 10px;
+                        border: 1px solid black;
+                        position: absolute;
+                        bottom: 2%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .prod-image{
+                            width: 25%;
+                            border-right: 1px solid;
+                        }
+                        .prod-name{
+                            width: 60%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            font-family: "Roboto Mono";
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 14px;
+                            button{
+                                width: 40%;
+                                height: 40px;
+                                border-radius: 15px;
+                                font-family: "figtree";
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+                .card-1{
+                    background-color: #F5AF8A;
+                    text-align: center;
+                    .reviews{
+                        font-size: 2vw;
+                    }
+                    .prod-bought{
+                        background-color: #EA6D44;
+                    }
+                }
+                .card-2{
+                    background-color: #ABDF74;
+                    text-align: center;
+                    .reviews{
+                        font-size: 14px;
+                    }
+                    .prod-bought{
+                        background-color: #73BC25;
+                    }
+                }
+                .card-3{
+                    background-color: #FFD265;
+                    text-align: center;
+                    .reviews{
+                        font-size: 14px;
+                    }
+                    .prod-bought{
+                        background-color: #FFB500;
+                    }
+                }
+                .card-4{
+                    background-color: #ADE674;
+                    text-align: center;
+                    .reviews{
+                        font-size: 2vw;
+                    }
+                    .prod-bought{
+                        background-color: #8BC045;
+                    }
+                }
+                .card-5{
+                    background-color: #D9C2E1;
+                    text-align: center;
+                    .reviews{
+                        font-size: 2vw;
+                    }
+                    .prod-bought{
+                        background-color: #C790DB;
+                    }
+                }
+            }
+        }
+    }
+    #section-6{
+        margin-top: 13%;
+        width: 100%;
+        .matcha-section{
+            width: 100%;
+            height: 90vh;
+            .matcha-image{
+                width: 50%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .matcha-content{
+                width: 100%;
+                background-color: #2A2857;
+                position: relative;
+                z-index: 2;
+                .center-div{
+                    width: 80%;
+                    height: 60%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h1{
+                        font-family: "instrument Serif";
+                        font-weight: 300;
+                        font-size: 64px;
+                        line-height: 85px;
+                        color: whitesmoke;
+                        br{
+                            display: none;
+                        }
+                    }
+                    p{
+                        margin: 5% 0;
+                        font-family: "figtree";
+                        font-weight: 400;
+                        font-size: 22px;
+                        color: whitesmoke;
+                    }
+                    button{
+                        width: 150px;
+                        height: 50px;
+                        border-radius: 25px;
+                        background-color: whitesmoke;
+                        font-size: 15px;
+                        font-family: "figtree";
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    #section-7{
+        .background-img{
+            img{
+                width: 100%;
+                height: 100%;
+                transform: scale(1.5);
+                object-fit: cover;
+            }
+        }
+        .side-div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            h2{
+                font-family: "Instrument Serif";
+                font-weight: 300;
+                font-size: 60px;
+                line-height: 61px;
+                color: whitesmoke;
+                br{
+                    display: none;
+                }
+            }
+            .discover{
+                height: 25%;
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    font-family: figtree;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: whitesmoke;
+                }
+                button{
+                    width: 100%;
+                    height: 30%;
+                    border-radius: 25px;
+                    background-color: whitesmoke;
+                    font-size: 18px;
+                    font-family: "figtree";
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    #section-8{
+        background-color: #C0DBFF;
+        padding: 1px;
+        height: 210%;
+        border: 1px solid black;
+        position: relative;
+        .steep-box{
+            margin: 5% auto;
+            width: 70%;
+            height: 20%;
+            h3{
+                font-family: "bebas neue";
+                font-weight: 500;
+                font-size: 40px;
+            }
+            p{
+                font-family: instrument Serif;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 37px;
+            }
+            .search-social{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+                .search,.social{
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5cm;
+                    input{
+                        width: 100%;
+                        height: 50%;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        text-indent: 5%;
+                        font-family: Figtree;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                    button{
+                        width: 35%;
+                        height: 50px;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        background-color: #2A2857;
+                        font-family: figtree;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: whitesmoke;
+                    }
+                }
+                .social{
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding-right: 5%;
+                    gap: 30px;
+                    i{
+                        font-size: 200%;
+                        border: 1px solid black;
+                        border-radius: 50px;
+
+                    }
+                }
+            }
+        }
+        .blue-box{
+            margin: -5% auto;
+            width: 90%;
+            height: 35%;
+            border: 1px solid black;
+            background-color: #2A2857;
+            border-radius: 15px;
+            position: relative;
+            .blue-content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 85%;
+                /*border: 1px solid white;*/
+            }
+            .desktop{
+                display: none;
+            }
+            .phone{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                overflow: hidden;
+                summary{
+                    list-style: none;
+                }
+                h4{
+                    font-family: instrument Serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: whitesmoke;
+                    margin-bottom: 9%;
+                }
+                li{
+                    font-family: figtree;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 25px;
+                    color: whitesmoke;
+                    opacity: 0.7;
+                    list-style: none;
+                }
+                li:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 35%;
+            overflow: hidden;
+            .logo img{
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20%;
+            }
+            .mountain-img img{
+                position: absolute;
+                bottom: 4cm;
+                width: 100%;
+                transform: scale(3);
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    main{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #content{
+            position: absolute;
+            top: 50%;
+            left: 39%;
+            transform: translate(-50%, 0%);
+            height: 45%;
+            h1{
+                font-size: 40px;
+                line-height: 45px;
+            }
+            p.refrest{
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .quote h1 {
+        font-family: "Instrument Serif";
+        font-weight: 300;
+        font-size: 20px;
+        br{
+            display: none;
+        }
+    }
+
+    .bestseller {
+        background-color: #DAAEEA;
+        height: 60px;
+        width: 180px;
+        border-radius: 10px;
+        border: 1px solid black;
+        transform: rotate(-3deg);
+        font-family: "bebas neue";
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .discover {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 380px;
+
+        .orange-box {
+            margin: 1cm 0 0 0;
+            background-color: #FF7F31;
+            height: 15%;
+            width: 50%;
+            /*letter-spacing: 3px;*/
+            border-radius: 10px;
+            border: 1px solid black;
+            justify-self: center;
+            transform: rotate(-3deg);
+            font-family: "bebas neue";
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content h2 {
+            margin: 20px 0;
+            font-family: "Instrument Serif";
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .search-box input {
+            margin: 20px 0;
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+            font-family: instrument Serif;
+            font-size: 38px;
+            text-indent: 0.5cm;
+        }
+    }
+
+    .vibe-box {
+        margin: 1cm auto;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    #section-4 {
+        .image-box {
+            .kettle{
+                position: absolute;
+                right: 50px;
+                width: 25%;
+            }
+            .founderBox {
+                h3 {
+                    background-color: #A2C9FC;
+                    height: 6%;
+                    width: 30%;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    transform: rotate(-3deg);
+                    font-family: "bebas neue";
+                    font-size: 6vmin;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h1{
+                    font-family: "bebas neue";
+                    font-weight: 600;
+                    font-size: 80px;
+                    line-height: 144px;
+                    color: whitesmoke;
+                    text-align: center;
+                    br{
+                        display: none;
+                    }
+                }
+                p{
+                    font-family: "Instrument Serif";
+                    font-weight: 300;
+                    font-size: 25px;
+                    line-height: 39px;
+                    color: whitesmoke;
+                    text-align: center;
+                }
+            }
+            .svg-box{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 100%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .svg-images{
+                    width: 100%;
+                    height: 33%;
+                    display: flex;
+                    justify-content: center;
+                    .svg-img{
+                        text-align: center;
+                        img{
+                            width: 60%;
+                        }
+                        p{
+                            width: 90%;
+                            font-family: "Roboto Mono";
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+                button{
+                    height: 60px;
+                    width: 80%;
+                    border: 1px solid black;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    font-family: figtree;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    #section-5{
+        display: none;
+        height: 120vh;
+        width: 100%;
+        position: relative;
+        .review-box{
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 95%;
+            .review-tag{
+                border: 1px solid black;
+                width: 90%;
+                height: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                h3{
+                    background-color: #73BC25;
+                    height: 80%;
+                    width: 20%;
+                    border-radius: 10px;
+                    transform: rotate(-3deg);
+                    font-family: "bebas neue";
+                    font-size: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid black;
+                }
+                p{
+                    display: none;
+                }
+            }
+
+            .review-cards{
+                border: 1px solid green;
+                width: 100%;
+                height: 90%;
+                overflow-x: hidden;
+                .review-carasoul{
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+                    overflow-x: auto;
+                    .card{
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+
+        }
+    }
+    #section-6{
+        .matcha-section{
+            display: flex;
+            flex-direction: column;
+            .matcha-image{
+                width: 100%;
+                height: 50%;
+            }
+            .matcha-content{
+                width: 100%;
+                height: 50%;
+                text-align: center;
+                .center-div{
+                    width: 90%;
+                    height: 90%;
+                    h1{
+                        font-size: 50px;
+                        line-height: 50px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #section-7{
+        .background-img{
+            img{
+                width: 100%;
+                height: 100%;
+                transform: scale(1.5);
+                object-fit: cover;
+            }
+        }
+        .side-div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            h2{
+                font-family: "Instrument Serif";
+                font-weight: 300;
+                font-size: 60px;
+                line-height: 61px;
+                color: whitesmoke;
+                br{
+                    display: none;
+                }
+            }
+            .discover{
+                height: 25%;
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    font-family: figtree;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: whitesmoke;
+                }
+                button{
+                    width: 100%;
+                    height: 30%;
+                    border-radius: 25px;
+                    background-color: whitesmoke;
+                    font-size: 18px;
+                    font-family: "figtree";
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    #section-8{
+        background-color: #C0DBFF;
+        padding: 1px;
+        height: 210%;
+        border: 1px solid black;
+        position: relative;
+        .steep-box{
+            margin: 5% auto;
+            width: 90%;
+            height: 20%;
+            h3{
+                font-family: "bebas neue";
+                font-weight: 500;
+                font-size: 30px;
+            }
+            p{
+                font-family: instrument Serif;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: normal;
+                br{
+                    display: none;
+                }
+            }
+            .search-social{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .search{
+                    button{
+                        width: 100%;
+                    }
+                }
+                .social{
+                    height: 20%;
+                    z-index: 3;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    bottom: 3cm;
+                }
+                }
+            }
+        }
+        .blue-box{
+            margin: -5% auto;
+            width: 90%;
+            height: 35%;
+            border: 1px solid black;
+            background-color: #2A2857;
+            border-radius: 15px;
+            position: relative;
+            .blue-content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 85%;
+                /*border: 1px solid white;*/
+            }
+            .desktop{
+                display: none;
+            }
+            .phone{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                overflow: hidden;
+                summary{
+                    list-style: none;
+                }
+                h4{
+                    font-family: instrument Serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: whitesmoke;
+                    margin-bottom: 9%;
+                }
+                li{
+                    font-family: figtree;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 25px;
+                    color: whitesmoke;
+                    opacity: 0.7;
+                    list-style: none;
+                }
+                li:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 35%;
+            overflow: hidden;
+            .logo img{
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20%;
+            }
+            .mountain-img img{
+                position: absolute;
+                bottom: 4cm;
+                width: 100%;
+                transform: scale(3);
+            }
+        }
+    }
